@@ -1,3 +1,7 @@
 .my-rules-separator {
   border: 1px solid gray;
 }
+.form-label,
+.form-check-label {
+  font-weight: 600;
+}
