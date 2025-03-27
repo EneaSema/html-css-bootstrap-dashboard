@@ -51,7 +51,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon d-lg-none"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -73,7 +73,7 @@
               <a class="nav-link" href="#">Help</a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex d-lg-none">
             <input
               class="form-control me-2"
               type="search"
@@ -87,12 +87,12 @@
     </nav>
 
     <!-- sezione principale con container -->
-    <div class="container">
+    <div class="container my-3">
       <h1>Nuovo Libro</h1>
       <div class="row">
         <!-- dati autore -->
-        <div class="col-6">
-          <div class="mb-3">
+        <div class="col-6 my-2">
+          <div>
             <label for="exampleFormControlInput1" class="form-label"
               >Nome Autore</label
             >
@@ -104,8 +104,8 @@
             />
           </div>
         </div>
-        <div class="col-6">
-          <div class="mb-3">
+        <div class="col-6 my-2">
+          <div>
             <label for="exampleFormControlInput2" class="form-label"
               >Cognome Autore</label
             >
@@ -118,8 +118,8 @@
           </div>
         </div>
         <!-- titolo -->
-        <div class="col-12">
-          <div class="mb-3">
+        <div class="col-12 my-2">
+          <div>
             <label for="exampleFormControlInput3" class="form-label"
               >Titolo</label
             >
@@ -133,7 +133,7 @@
           <p>Titolo versione italiana</p>
         </div>
         <!-- scegli genere -->
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 my-2">
           <label for="exampleFormControlInput4" class="form-label"
             >Genere</label
           >
@@ -146,8 +146,8 @@
           </select>
         </div>
         <!-- sezione pubblicazione -->
-        <div class="col-12 col-lg-4">
-          <div class="mb-3">
+        <div class="col-12 col-lg-4 my-2">
+          <div>
             <label for="exampleFormControlInput3" class="form-label"
               >Anno di Pubblicazione</label
             >
@@ -160,8 +160,8 @@
           </div>
         </div>
         <!-- codice identificativo -->
-        <div class="col-12 col-lg-4">
-          <div class="mb-3">
+        <div class="col-12 col-lg-4 my-2">
+          <div>
             <label for="exampleFormControlInput3" class="form-label"
               >ISBN#</label
             >
@@ -174,30 +174,25 @@
           </div>
         </div>
         <!-- separatore -->
-        <div class="col-12">
+        <div class="col-12 my-5">
           <div class="my-rules-separator"></div>
         </div>
         <!-- note -->
-        <div class="col-12">
-          <div class="mb-3">
+        <div class="col-12 my-2">
+          <div>
             <label for="exampleFormControlTextarea1" class="form-label"
               >Note</label
             >
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlTextarea7"
-              placeholder="aggiungi note sul libro"
-            />
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
+              placeholder="aggiungi note sul libro"
             ></textarea>
           </div>
         </div>
         <!-- disponibile in digitale e tasto aggiungi -->
-        <div class="col-12">
+        <div class="col-12 my-2">
           <div class="mb-3 form-check">
             <input
               type="checkbox"
